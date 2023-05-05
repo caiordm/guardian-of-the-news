@@ -7,7 +7,7 @@
 	let data = [];
 
 	onMount(async () => {
-		const res = await fetch('http://localhost:8080/news-api/');
+		const res = await fetch('http://localhost:8080/news-api/api/');
 		console.log(await res);
 		var json = JSON.parse(await res.json());
 		data = json.articles;
